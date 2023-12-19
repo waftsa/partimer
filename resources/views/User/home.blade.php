@@ -18,7 +18,6 @@ tr:nth-child(even) {
 }
 </style>
 
-@section('content')
     <h1>Hello , {{ auth()->user()->name }}</h1>
     <h2>Pekerjaanmu</h2>
     {{ $accept }}
@@ -44,4 +43,3 @@ tr:nth-child(even) {
     @endforeach
     </table>
     
-@endsection

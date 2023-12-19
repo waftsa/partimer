@@ -5,6 +5,14 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
+.title{
+    font-family: 'Viga', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
 .layout {
     width: 100%;
     padding: 20px;
@@ -63,7 +71,7 @@ button a {
     font-size: 18px;
 }
 .container{
-    width: 90%;
+    width: 100%;
     justify-content: center;
     margin-top: 8%;
     padding: 10px;
@@ -78,9 +86,30 @@ button a {
     text-align: center;
 }
 
-/* .mb-3 input, .input-group select, .input-group textarea{
-    box-sizing: border-box;
-}  */
+.container-table{
+    width: 1000px;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0.1, 0.1, 0.1, 0.1);
+    padding-right: 10px;
+}
+
+.container-table table {
+    border:2px solid #C780FA;
+    width: 100%;
+  }
+  
+.container-table  td, th {
+  border-collapse: collapse;
+  width: 1000px;
+  border: 2px solid #C780FA;
+  text-align: left;
+  padding: 8px;
+}
+
+.container-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 .input-group input {
     width: 100%;
@@ -123,4 +152,58 @@ button a {
     padding: 10px;
     margin-top: 20px;
 }
+.box-layout{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.job-box{
+    width: calc(50% - 20px); /* Ubah nilai dari 10px menjadi 20px */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    height: 50%;
+    background-color: white;
+    border: 1px solid #C5C5C5;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .job-box h1{
+    font-family: 'Viga', sans-serif;
+    color: #000000;
+    font-size: 32px;
+  }
+  .job-box h2{
+    color: #000000;
+    font-size: 20px;
+  }
+  .job-box h3{
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    padding: 5px;
+  }
+  .job-box h4{
+    color: #000000;
+    width: auto;
+    padding: 5px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+  }
+  .job-box p{
+    color: #717171;
+    font-size: 14px;
+  }
+  .gray{
+    color: #717171;
+    font-size: 15px;
+  }
+
 

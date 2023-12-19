@@ -9,26 +9,8 @@
 
 @extends('Layout/company')
 
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 2px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-
-
-    <h1> Applicant </h1>
+    <p class="title" style="margin: 0px; margin-top: 5%;"> Applicant </p>
+    <div class="container-table">
     <table>
     <tr>
         <td>Name</td>
@@ -61,4 +43,5 @@ tr:nth-child(even) {
         @endif
     @endforeach    
 </table>
+</div>
 </body>

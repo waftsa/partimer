@@ -86,8 +86,113 @@ body{
   }
   .link-text{
     color: #4285F4;
+    text-decoration: none;
   }
 
   a {
     text-decoration: none;
   }
+  button a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .container {
+    width: 85%;
+    margin-top: 8%;
+  }
+
+  .button-edit button{
+    font-family: 'Viga', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color:#C780FA;  
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .button-cancel button{
+    font-family: 'Viga', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color:#DD2C2C;  
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .row{
+    width: 100%;
+  }
+
+  .row .col-sm-3 input :disabled{
+    color: #0000;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .row .col-sm-3 input ::-ms-value{
+    color: #0000;
+    border-radius: 5px;
+    border: 1px solid #C780FA;
+  }
+
+  .box-layout{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .job-box{
+    width: calc(50% - 20px); /* Ubah nilai dari 10px menjadi 20px */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: white;
+    border: 1px solid #C5C5C5;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .job-box h1{
+    font-family: 'Viga', sans-serif;
+    color: #000000;
+    font-size: 32px;
+  }
+  .job-box h2{
+    color: #000000;
+    font-size: 20px;
+  }
+  .job-box h3{
+    color: #000000;
+    font-size: 15px;
+    display: flex;
+    padding: 5px;
+  }
+  .job-box h4{
+    color: #000000;
+    width: auto;
+    padding: 5px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+  }
+  .job-box p{
+    color: #717171;
+    font-size: 14px;
+  }
+  .gray{
+    color: #717171;
+    font-size: 15px;
+  }
+

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="{{ asset('assets/css/landing.css') }}">
+  
 </head>
 <body>
 

@@ -10,8 +10,8 @@
 
   @include('Partials/navuser')
   @include('flash-message/message')
-
-    <!-- <div class="container mt-4">
+<!-- 
+    <div class="container mt-4">
         @yield('content')
     </div> -->
 

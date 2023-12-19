@@ -1,6 +1,15 @@
-@extends('Layout/layout')
+@extends('Layout/user')
 
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ asset('assets/css/user.css') }}">
+  <!-- Add other necessary stylesheets and scripts here -->
+</head>
+<body>
+
     @auth
         <div class="container">
         <form action="{{ route('profile.update',auth()->id()) }}" method="POST" enctype="multipart/form-data">
@@ -18,34 +27,37 @@
   @endif
 
             <h1>{{ $user->fullName }} </h1>
-        </div>
+        
         <div class="row">
-            <span class="col-sm-2">
+            <span class="col-sm-3">
                 <label class="form-label">Phone Number</label>
                 <input type="text" value="{{ auth()->user()->phoneNum }}" name="phoneNum">
             </span>
-            <span class="col-sm-2">
+            <span class="col-sm-2"></span>
+            <span class="col-sm-3">
                 <label class="form-label">Age</label>
                 <input type="number" min="18" step="1" value="{{ auth()->user()->age }}" name="age">
             </span>
         </div>
           
         <div class="row">
-            <span class="col-sm-2">
+            <span class="col-sm-3">
                 <label class="form-label">Email</label>
                 <input type="text" value="{{ auth()->user()->email }}" name="email">
             </span>
-            <span class="col-sm-2">
+            <span class="col-sm-2"></span>
+            <span class="col-sm-3">
                 <label class="form-label">Education</label>
                 <input type="text" value="{{ auth()->user()->education }}" name="edu">
             </span>
         </div>
         <div class="row">
-            <span class="col-sm-2">
+            <span class="col-sm-3">
                 <label class="form-label">SocialMedia</label>
                 <input type="text" value="{{ auth()->user()->socialMedia }}" name="socMed">
             </span>
-            <span class="col-sm-2">
+            <span class="col-sm-2"></span>
+            <span class="col-sm-3">
                 <label class="form-label">Address</label>
                 <input type="text" value="{{ auth()->user()->address }}" name="address">
             </span>
@@ -64,11 +76,24 @@
 
             @endif
 
-        </div>      
-        <button type="submit" class="btn btn-primary mt-3">Save</button>  
-        <a href="{{ route('profile',auth()->id()) }}" class="btn btn-primary mt-3">Cancel</a>    
-        </form>
+        </div>  
+        <div class="row" style="margin-top: 20px;">
+        <span class="col-sm-3">
+        <div class="button-edit">   
+        <button type="submit">Save</button>  
+        </div>
+        </span> 
+        <span class="col-sm-2"></span>
+        <span class="col-sm-3">
+        <div class="button-cancel">
 
+        <button a href="{{ route('profile',auth()->id()) }}">Cancel</a></button>    
+        </div>
+        </span>
+        </div>
+
+        </form>
+        </div>
     @endauth
 
-@endsection
+</body>

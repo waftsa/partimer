@@ -14,8 +14,8 @@
   </div>
   <div class="nav-links">
     @auth
-    <a href="{{ route('job.index') }}">Find Job</a>
-    <a href="{{ route('profile',auth()->id()) }}">My Profile</a>
+    <a href="{{ route('job.index') }}">Job Orffers</a>
+    <a href="{{ route('profile',auth()->id()) }}">Company Profile</a>
     <a href="/contact_us">Contact Us</a>
     <a href="/about_us">About Us</a>
     @endauth
